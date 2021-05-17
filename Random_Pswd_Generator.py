@@ -12,7 +12,7 @@ n_letters=int(input("How many letters you want in your password?\n"))
 n_numbers=int(input("How many numbers you want in your password?\n"))
 n_symbols=int(input("How many symbols you want in your password?\n"))
 
-password=""
+password=[]
 
 for char in range(1, n_letters+1):
     password += random.choice(letters)
@@ -21,7 +21,6 @@ for char in range(1, n_numbers+1):
 for char in range(1, n_symbols+1):
     password += random.choice(symbols)
 
-password=list(password)
 random.shuffle(password)
 
 final_password = ""
